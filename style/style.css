@@ -1,0 +1,176 @@
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.logo{
+   width: 8%;
+}
+
+.header a{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.icon{
+   flex-direction: column;
+}
+
+.main{
+   margin-top: 200px;
+   display: flex;
+   justify-content:space-around ;
+}
+
+.block , .block1 , .block2{
+   background-color: rgb(212, 212, 212);
+   border-radius: 15px;
+   height: 500px;
+   transition: 0.5s ;
+}
+
+.foto-tovar{
+   width: 65%;
+   margin-left: 80px;
+}
+
+.info, .info1, .info2 {
+   opacity: 0;
+   transition: 0.5s;
+   margin-left: 150px;
+ }
+ 
+.block:hover .info {
+   opacity: 1; 
+ }
+ .block1:hover .info1 {
+   opacity: 1; 
+ }
+ .block2:hover .info2 {
+   opacity: 1; 
+ }
+
+.block:hover {
+   height: 700px;
+ }
+ .block1:hover {
+   height: 700px;
+ }
+ .block2:hover {
+   height: 700px;
+ }
+ 
+
+.block a{
+   margin-left: 130px;
+}
+.block1 a{
+   margin-left: 130px;
+}
+.block2 a{
+   margin-left: 130px;
+}
+
+.button{
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.9);
+   background-color: darkgray;
+   font-size: 24px;
+   padding: 12px 30px; 
+   border-radius: 10px; 
+   opacity: 0;
+   transition: 0.5s;
+   display: inline-block; 
+   margin-top: 20px; 
+ }
+
+ .block:hover .button {
+   opacity: 1; 
+ }
+ .block1:hover .button {
+   opacity: 1; 
+ }
+ .block2:hover .button {
+   opacity: 1; 
+ }
+
+ @media screen and (max-width: 768px) {
+   .header {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .logo {
+      width: 80px;
+     margin-bottom: 10px;
+    }
+    
+    
+
+    .header a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 15px;
+    }
+    
+    .main {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+    
+    .block, .block1, .block2 {
+      background-color: rgb(212, 212, 212);
+      border-radius: 15px;
+      width: 90%;
+      max-width: 350px;
+      height: auto;
+      padding: 20px;
+      text-align: center;
+      transition: 0.5s;
+    }
+    
+    .foto-tovar {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .info, .info1, .info2 {
+      opacity: 1;
+      transition: 0.5s;
+      margin: 10px 0;
+    }
+    
+    .button {
+      text-decoration: none;
+      color: white;
+      background-color: darkgray;
+      font-size: 20px;
+      margin-left: 0;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 10px;
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    .main a{
+      margin: 0;
+    }
+ }
